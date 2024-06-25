@@ -1,0 +1,137 @@
+/*GERAL -----------------------*/
+.gap-smaller{
+    gap: 0.5vw;
+}
+
+.gap-small{
+    gap: 1vw;
+}
+
+.gap-medium{
+    gap: 2vw;
+}
+
+.gap-large{
+    gap: 4vw;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer{
+    width: 100%;
+    height: 36vh;
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    padding: 4vw 0px;
+    overflow: hidden;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.section-content{
+    display: flex;
+    width: var(--screen-size);
+}
+
+.section-small{
+    display: flex;
+    width: var(--screen-size);
+    padding: 4vw;
+    border-radius: 20px;
+    background-color: var(--light-beige); 
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.062);
+    box-sizing: border-box;
+    z-index: 99;
+
+    position: relative; /* Necessário para a animação */
+    animation: slideDown 1s ease; /* Nome da animação, duração e função de temporização */
+    animation-fill-mode: forwards; /* Mantém o estado final da animação */
+    opacity: 0; /* Começa invisível */
+}
+
+.container-row{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.content-row{
+    display: flex;
+    justify-content: space-between;
+    width: var(--screen-size);
+}
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+}
+
+/*ICONS*/
+
+.icon-default{
+    width: 2vw;
+    max-height: 2vw;
+    transition: 0.5s;
+}
+
+.icon-small{
+    width: 1.5vw;
+    max-height: 1.5vw;
+    transition: 0.5s;
+}
+
+/*BUTTONS*/
+.button-simple{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button-default{
+    display: flex;
+    width: fit-content;
+    padding: 1vw 2vw;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 99px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.button-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px; 
+    background-color: var(--pink); 
+    height: 3.5vw; 
+    width: 3.5vw;
+    padding: 0.5vw; 
+    box-sizing: border-box;
+}
+
+.button-default:hover,
+.button-round:hover{
+    scale: 1.05;
+    transition: 1s;
+}
+

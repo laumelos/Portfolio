@@ -1,0 +1,257 @@
+@media (max-width: 1036px) and (orientation: portrait){
+/*GERAL ----------------------------------- */
+
+:root {
+    --screen-size: 90%;
+}
+
+/*FONTS ----------------------------------- */
+small{
+    font-size: 3.2vw;
+    max-width: 60%;
+}
+
+p,
+button{
+    font-size: 3.8vw;
+}
+
+strong{
+    font-size: 3.9vw;
+}
+
+h1{
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2vw;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 3.8vw;
+    font-weight: 500;
+}
+
+a,
+h4{
+    font-size: 3.6vw;    
+}
+
+/*GLOBALS*/
+.content-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--screen-size);
+}
+
+.container-grid{
+    gap: 4vw;
+}
+
+.gap-small{
+    gap: 2vw !important;
+}
+
+.gap-medium{
+    gap: 4vw !important;
+}
+
+/*ICONS*/
+.icon-default{
+    width: 8vw;
+    max-height: 8vw;
+}
+
+.icon-small{
+    width: 4vw;
+    max-height: 4vw;
+}
+
+/*buttons*/
+.button-default{
+    padding: 2vw 4vw;
+}
+
+/*ESPECIFICS*/
+
+/*HEADER*/
+#nav{
+    display: none;
+}
+
+nav a h2{
+    text-align: center;
+}
+
+/*ABOUT ME*/
+#about-me,
+#project-info-container{
+    margin-top: 8vw;
+}
+
+#about-me div{
+    flex-direction: column-reverse;
+}
+
+
+#sobre-text{
+    width: 100%;
+}
+
+#profile-picture-container {
+    display: flex;
+    align-items: center;
+}
+
+#profile-picture{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+}
+
+#icon-profile{
+    width: 14vw;
+    height: 14vw;
+    right: 24vw;
+}
+
+
+/*CERTIFICATES*/
+#certificate-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vw;
+}
+
+#certificate-seta{
+    display: none;
+}
+
+.certificate{
+    position: relative;
+    margin-right: 30px;
+    column-gap: 3vw;
+}
+
+.certificate-img{
+    width: 30vw;
+    min-width: 30vw;
+    height: 20vw;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+/*KNOWLEDGE*/
+.item-knowledge{
+    width: 100%;
+    height: unset;
+    padding: 5vw;
+}
+
+.item-knowledge-project-page{
+    width: 13.3vw;
+    height: 13.3vw;
+    padding: 3vw;
+}
+
+.item-knowledge img{
+    width: 100%;
+    height: auto;
+    max-height: unset;
+}
+
+/*EXPERIENCE*/
+.experience{
+    width: var(--screen-size) !important;
+}
+
+.experience-detail{
+    width: 1vw;
+    left: 3.5vw;
+}
+
+.experience-detail-small{
+    height: 30vw;
+    width: 1vw; 
+    left: 3.5vw;
+}
+
+.experience-info{
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start;
+}
+
+.experience-info div,
+.experience-description{
+    width: unset;
+}
+
+/*PROJECTS*/
+#projects-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img{
+    height: 30vw;
+}
+
+.project-info{
+    padding: 3vw;
+}
+
+.project-category,
+.button-filter{
+    padding: 0.5vw 1.5vw;
+}
+
+.category{
+    padding: 1vw 2vw;
+}
+
+.project-all-page .project-img {
+    height: 24vw;
+    object-position: left;
+}
+
+/*FOOTER*/
+#footer-detail{
+    right: -10vw;
+}
+
+#contacts img{
+    width: 6vw;
+    width: 6vw;
+}
+
+/*animation*/
+#gradient-bg-small {
+    top: -10vw;
+    right: 0vw;
+}
+
+#project-github-button{
+    width: 10vw;
+    height: 10vw;
+}
+
+.bg-shape{
+    opacity: 1;
+    filter: blur(70px);
+}
+}
+
+@media (max-width: 1036px){
+#main-content{
+    padding-bottom: 24vh;
+}
+
+footer{
+    height: 24vh;
+}
+
+}

@@ -1,0 +1,119 @@
+<section id="about-me" style="background-color: var(--light-beige);">
+    <div class="section-content content-row gap-medium">
+        <div id="sobre-text" class="container-column gap-medium">
+            <h1>Sobre mim</h1>
+            <p><strong>Olá!</strong>
+                Eu me chamo Laura, sou graduanda do curso de Design e estudo programação. 
+                Amo animais, viajar, café e tudo que me permita expressar minha criatividade, 
+                por isso a combinação do design com o desenvolvimento deu tão certo pra mim!
+            </p>
+            <span class="container-row gap-small">
+                <img class="icon-default" src="images/location-icon.svg" alt="">
+                <p>São Luís - MA</p>
+            </span>
+        </div>
+
+        <div id="gradient-bg-small">
+            <div id="shape-1" class="bg-shape"></div>
+            <div id="shape-2" class="bg-shape"></div>
+            <div id="shape-3" class="bg-shape"></div>
+        </div>
+
+        <div id="profile-picture-container">
+            <img id="icon-profile" src="images/desiger-dev.svg" alt="">
+            <div id="profile-picture" class="picture"></div>
+        </div>
+        
+    </div>
+</section>
+<section id="certificates" class="container-column gap-large" style="background-color: var(--beige); padding-bottom: 0px;">
+    <div class="section-content container-column gap-medium">
+        <span onclick="if(deviceSize === 'desktop'){certificatesAnimation()}" class="container-row gap-small">
+            <h1>Meus certificados</h1>
+            <img id="certificate-seta" class="icon-small" src="images/caret-down-bold.svg">
+        </span>
+        <div id="certificate-container" class="certificate-close" onclick="if(deviceSize === 'desktop'){certificatesAnimation()}"></div>
+    </div>
+    <a class="button-default" href="https://www.linkedin.com/in/laura-melo-91533222b/" target="_blank"><strong style="color: white;">Ver todos</strong></a>
+    
+    <template id="certificate-template">
+        <div class="certificate">
+            <div class="certificate-img" style="background-image: url();"></div>
+            <div class="certificate-info gap-smaller" style="display: none;">
+                <strong class="certificate-data"></strong>
+                <p class="certificate-title"></p>
+            </div>
+        </div>
+    </template>
+</section>
+<section id="knowledge" class="container-column gap-large">
+    <div id="top-background"></div>
+    <div id="gradient-bg">
+        <div id="shape-4" class="bg-shape"></div>
+        <div id="shape-5" class="bg-shape"></div>
+        <div id="shape-6" class="bg-shape"></div>
+    </div>
+    <div class="section-small content-row gap-large">
+
+        <div class="container-column gap-small">
+            <h1>Conhecimento</h1>
+            <p id="tech-info">*Clique ou passe o mouse sobre algum dos ícones ao lado*</p>
+        </div>
+
+        <div id="item-knowledge-container" class="container-grid"></div>
+
+        <template id="item-knowledge-template">
+            <div id="" class="item-knowledge">
+                <img class="icon-default" src="">
+            </div>
+        </template>
+
+    </div>
+</section>
+
+<section id="experience" class="container-column gap-large" style="background-color: var(--light-beige);">
+    <div class="section-content container-column gap-medium" >
+        <h1>Experiências</h1>
+        <div id="experiences-container" class="container-column gap-large">
+            <div class="experience-detail" style="background-color: #00000008;"></div>
+        </div>
+
+        <template id="experiences-template">
+            <div class="experience container-row gap-medium">
+                
+                <div class="experience-detail-small"></div>
+                <img src="images/work-icon.svg" class="icon-default work-icon" style="z-index: 1;">
+                <div class="experience-info">
+                    <div class="container-column">
+                        <strong class="experience-date" style="color: var(--pink);"></strong>
+                        <strong class="experience-title"></strong>
+                    </div>
+                    <p class="experience-description"></p>
+                </div>
+            </div>
+        </template>
+    </div>
+</section>
+
+<section id="projects" class="container-column gap-medium" style="background-color: var(--beige);">
+    <div class="section-content container-column gap-medium" style="align-items: center">
+        <h1>Projetos</h1>
+        <div id="project-category" class="container-row">
+            <h3 class="category selected" onclick="changeProjectCategory(this, 'all')">Todos</h3>
+            <h3 class="category" onclick="changeProjectCategory(this, 'dev')">DEV</h3>
+            <h3 class="category" onclick="changeProjectCategory(this, 'design')">Design</h3>
+        </div>
+    </div>
+    <div id="projects-container" class="container-grid section-content"></div>
+    <button id="more-projects-btn" class="button-default" style="display: none;" onclick="loadPage('allProjects.html')"><strong style="color: white;">Ver mais</strong></button>
+
+    <template id="projects-template">
+        <div class="project container-column">
+            <img class="project-img"></img>
+            <div class="project-info">
+                <strong class="project-title"></strong>
+                <h4 class="project-description"></h4>
+            </div>
+        </div>
+    </template>
+</section>

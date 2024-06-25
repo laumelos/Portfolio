@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shotcut icon" href="./images/logo_miniature.svg">
+    <title>Laura Melo ✦ Portifólio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <nav class="section-content content-row">
+                <button class="button-simple" onclick="loadPage('home.html')"><h2>Laura Melo ✦ Portifólio</h2></button>
+                <div id="nav">
+                    <h3 onclick="navScroll('about-me')">SOBRE MIM</h3>
+                    <h3 onclick="navScroll('certificates')">CONHECIMENTO</h3>
+                    <h3 onclick="navScroll('experience')">EXPERIÊNCIAS</h3>
+                    <h3 onclick="navScroll('projects')">PROJETOS</h3>
+                    <h3 onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});">CONTATOS</h3>
+                </div>
+            </nav>
+        </header>
+        
+
+        <div id="main-content" class="container-column"></div>
+
+
+        <footer class="gap-medium container-column" style = "background-color: var(--blue);">
+            <div id="contacts" class="section-content container-column gap-small" style="color: var(--light-beige);">
+                <h1>Contatos</h1>
+                <a href="mailto:lauraemelos@gmail.com" class="container-row gap-small"><img src="images/logo-mail.svg" class="icon-default" alt="E-mail">lauraemelos@gmail.com</a>
+                <a href="https://www.linkedin.com/in/laura-melo-91533222b/" class="container-row gap-small"><img src="images/logo-linkedin.svg" class="icon-default" alt="Linkedin">laura-melo</a>
+                <a href="https://github.com/laumelos" class="container-row gap-small"><img src="images/logo-github.svg" class="icon-default" alt="GitHub">@laumelos</a>
+            </div>
+            <img id="footer-detail" src="images/vector-swirl.svg">
+            <small style="color: var(--light-beige);">Desenvolvimento e design feito por mim com muito ☕</small>
+        </footer>
+    </main>
+</body>

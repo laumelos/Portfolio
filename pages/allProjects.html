@@ -1,0 +1,27 @@
+<section id="project-info-container" class="container-column gap-medium" style="background-color: var(--light-beige);">
+    
+    <div class="content-row gap-small">
+        <div id="project-info-text" class="container-column gap-small">
+            <button onclick="loadPage('home.html')" class="container-row gap small button-simple"><img src="images/caret-left.svg" class="icon-small" alt="Voltar"><p style="color: var(--gray); cursor: pointer">Início</p></button>
+            <h1 id="project-info-title">Todos os projetos</h1>
+        </div>
+        <div id="all-projects-category" class="container-row gap-small" style="align-items: flex-end;">
+            <img class="icon-default" src="images/filter-icon.svg" alt="Filtro">
+            <button class="category button-filter selected" onclick="changeProjectCategory(this, 'all')">Todos</button>
+            <button class="category button-filter" onclick="changeProjectCategory(this, 'dev')">DEV</button>
+            <button class="category button-filter" onclick="changeProjectCategory(this, 'design')">Design</button>
+        </div>
+    </div>
+    <div id="projects-container" class="section-content container-column gap-small"></div>
+
+    <template id="projects-template">
+        <div id="" class="project project-all-page container-row">
+            <img class="project-img"></img>
+            <div class="project-info">
+                <small class="project-category" style="color: var(--light-beige);"></small>
+                <strong class="project-title"></strong>
+                <h4 class="project-description"></h4>
+            </div>
+        </div>
+    </template>
+</section>
