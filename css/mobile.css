@@ -105,18 +105,19 @@ nav a h2{
 #profile-picture-container {
     display: flex;
     align-items: center;
+    margin-top: 2vw;
 }
 
 #profile-picture{
-    width: 30vw;
-    height: 30vw;
+    width: 40vw;
+    height: 40vw;
     border-radius: 50%;
 }
 
 #icon-profile{
-    width: 14vw;
-    height: 14vw;
-    right: 24vw;
+    width: 20vw;
+    height: 20vw;
+    right: 20vw;
 }
 
 
