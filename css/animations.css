@@ -130,4 +130,19 @@
         filter: blur(60px);
     }
     
+    /*gradient background*/
+    #shape-4{
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    #shape-5{
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    #shape-6{
+        width: 30vw;
+        height: 30vw;
+    }
 }
