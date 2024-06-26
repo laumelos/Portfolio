@@ -34,7 +34,7 @@ function loadPageFunctions(){
         addProjects();
     }
     navAdjustments();
-
+    window.scrollTo({ top: 0});
 }
 
 function loadProject(id){
@@ -45,6 +45,7 @@ function loadProject(id){
     const projectId = id;
     projectControl(projectId);
     navAdjustments();
+    window.scrollTo({ top: 0});
     });
 
     currentPage = 'project.html';
