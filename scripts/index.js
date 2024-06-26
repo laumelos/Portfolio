@@ -77,10 +77,10 @@ function navScroll(targetSection){
 
 
 const dataCertificates = [
-    { image: 'url("images/certificates/CERTIFICADOneon.png")', data: '02/06/2023', title: 'Nordeste On 2023 - Sebrae' },
+    { image: 'url("images/certificates/CERTIFICADOneon.jpg")', data: '02/06/2023', title: 'Nordeste On 2023 - Sebrae' },
     { image: 'url("images/certificates/CERTIFICADOcodeceumaFigma.jpg")', data: '20/06/2023', title: 'Instrutora do módulo de Figma - CodeCeuma' },
-    { image: 'url("images/certificates/CERTIFICADOnlwExperience.png")', data: '10/02/2024', title: 'NLW Expert trilha de HTML, CSS e Js - Rocketseat' },
-    { image: 'url("images/certificates/CERTIFICADOimersaoFrontAlura.png")', data: '06/02/2024', title: 'Imersão Front-End Alura' }
+    { image: 'url("images/certificates/CERTIFICADOnlwExperience.jpg")', data: '10/02/2024', title: 'NLW Expert trilha de HTML, CSS e Js - Rocketseat' },
+    { image: 'url("images/certificates/CERTIFICADOimersaoFrontAlura.jpg")', data: '06/02/2024', title: 'Imersão Front-End Alura' }
 ];
 
 var certificatePosition = 0;
