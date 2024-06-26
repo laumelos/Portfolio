@@ -248,11 +248,11 @@ nav a h2{
 
 @media (max-width: 1036px){
 #main-content{
-    padding-bottom: 24vh;
+    padding-bottom: 50vw;
 }
 
 footer{
-    height: 24vh;
+    height: 50vw;
 }
 
 }
