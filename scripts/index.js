@@ -348,7 +348,7 @@ function changeProjectCategory(element, category){
 }
 
 const dataExperiences = [
-    { title: 'Loja online - Suflora', date: '2020 - 2021', description: 'Início da jornada empreendedora aos 16 anos, criando e gerenciando uma loja online'},
+    { title: 'Loja online - Sunflora', date: '2020 - 2021', description: 'Início da jornada empreendedora aos 16 anos, criando e gerenciando uma loja online'},
     { title: 'Social Media do Oxygeni Hub - Hub de Inovação do Grupo Ceuma', date: '2021.2 - 2022.2', description: 'Design de posts para as mídias sociais e criação de identidades visuais para projetos'},
     { title: 'Estagiária na Diretoria de Inovação e Tecnologia do Grupo Ceuma', date: '2021 - 2023.1', description: 'Criação do design system para aplicações e de marcas e identidades visuais para projetos e produção para mídias sociais'},
     { title: 'Curso Incode', date: '2022.2, 2023.1 e 2024', description: 'Instrutora do módulo de design do curso Incode, ministrado na Universidade Ceuma'},
