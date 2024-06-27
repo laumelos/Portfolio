@@ -63,11 +63,13 @@ function navAdjustments(){
             document.querySelector('nav').style.justifyContent = 'center';
         }
     }else{
-        if(document.getElementById('nav').style.display !== 'flex'){
-            document.getElementById('nav').style.display = 'flex';
-        }
-        if(document.querySelector('nav').style.justifyContent !== 'space-between'){
-            document.querySelector('nav').style.justifyContent = 'space-between';
+        if(deviceSize === 'desktop'){
+            if(document.getElementById('nav').style.display !== 'flex'){
+                document.getElementById('nav').style.display = 'flex';
+            }
+            if(document.querySelector('nav').style.justifyContent !== 'space-between'){
+                document.querySelector('nav').style.justifyContent = 'space-between';
+            }
         }
     }
 }
