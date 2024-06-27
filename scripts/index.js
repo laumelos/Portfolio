@@ -212,7 +212,7 @@ const dataProjects = [
     { id:'4', image: 'images/projects/quizNlw.png', video: 'images/projects/quizNlw.mp4', title: 'Quiz - NLW Experience', link: '', description: 'Projeto de um quiz desenvolvido durante a NLW Experience da Rocketseat, na trilha de HTML, CSS e JavaScript', category: 'dev', github:'https://github.com/laumelos/NLWexperience', technologies: 'html,css,js'},
     { id:'5', image: 'images/projects/universo_representacoes.jpg', title: 'Universo Representações', link: 'https://www.behance.net/gallery/201572409/Universo-Representacoes?', description: 'Logo para empresa de representação comercial', category: 'design', technologies: 'figma,ai'},
     { id:'6', image: 'images/projects/trabalhoJovem.png', title: 'Trabalho Jovem - Inscrição', link: 'https://formularioestudantil.trabalhojovem.ma.gov.br/', description: 'Formulário de inscrição para programa do Governo do Maranhão, que ao fim do período de inscrição contabilizou mais de 12 mil inscritos', category: 'dev', github: '', technologies: 'html,css,js,php,sql,ui,ux'},
-    { id:'7', image: 'images/projects/portifolio.jpg', title: 'Meu portifólio', link: 'www.lauramelo.com.br', description: 'Portifólio pessoal, com o objetivo de apresentar minhas habilidades, experiências e projetos realizados', category: 'dev', github: 'https://github.com/laumelos/portifolio', technologies: 'html,css,js,ui,ux'}
+    { id:'7', image: 'images/projects/portifolio.jpg', title: 'Meu portifólio', link: 'https://www.lauramelo.com.br', description: 'Portifólio pessoal, com o objetivo de apresentar minhas habilidades, experiências e projetos realizados', category: 'dev', github: 'https://github.com/laumelos/portifolio', technologies: 'html,css,js,ui,ux'}
 ];
 
 dataProjects.reverse();
