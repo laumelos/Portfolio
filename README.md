@@ -1,4 +1,5 @@
 Bem-vindo ao meu portfólio pessoal! 
+
 Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript. O objetivo é mostrar minhas habilidades, projetos e experiência como designer e desenvolvedora.
 
 Funcionalidades
