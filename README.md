@@ -33,7 +33,7 @@ portfolio/
 ```
 
 
-## O projeto pode ser acessado pelo link: [add link]
+## O projeto pode ser acessado pelo link: [https://www.lauramelo.com.br]
 
 ## Contribuição
 Se você deseja contribuir para este projeto, sinta-se à vontade. Qualquer feedback é bem-vindo!
@@ -42,4 +42,4 @@ Se você deseja contribuir para este projeto, sinta-se à vontade. Qualquer feed
 - **Nome**: Laura Melo
 - **Email**: lauraemelos@gmail.com
 - **LinkedIn**: [https://www.linkedin.com/in/laura-melo-91533222b/](https://www.linkedin.com/in/laura-melo-91533222b/)
-- **Website**: [add site]
+- **Website**: [https://www.lauramelo.com.br]
