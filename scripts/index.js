@@ -90,10 +90,9 @@ const dataCertificates = [
     { image: 'url("images/certificates/CERTIFICADOimersaoFrontAlura.jpg")', data: '06/02/2024', title: 'Imersão Front-End Alura' }
 ];
 
-var certificatePosition = 0;
-
 // Função para criar e adicionar certificados à página
 function addCertificates() {
+    var certificatePosition = 0;
     const container = document.getElementById('certificate-container');
     const template = document.getElementById('certificate-template');
 
