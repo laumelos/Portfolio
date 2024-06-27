@@ -130,84 +130,91 @@ function addCertificates() {
     });
 }
 
+var certificateCLickDisabled = false;
+
 //Cria a animação dos certificados para desktop
 function certificatesAnimation() {
 
     var certificateCount = 0;
 
-    if (document.getElementById("certificate-container").classList.contains("certificate-close")){
-        //troca a classe certificate-container para open
-        (document.getElementById("certificate-container").classList.remove("certificate-close"));
-        (document.getElementById("certificate-container").classList.add("certificate-open"));
+    if (!certificateCLickDisabled){
+        if (document.getElementById("certificate-container").classList.contains("certificate-close")){
+            certificateCLickDisabled = true;
+            //troca a classe certificate-container para open
+            (document.getElementById("certificate-container").classList.remove("certificate-close"));
+            (document.getElementById("certificate-container").classList.add("certificate-open"));
 
-        document.getElementById("certificate-seta").style.transform = "scaleY(-1)"
-        
-        //esconde todos as informações dos certificados (o 0% de opacidade para a animação de mostrar o texto devagar depois)
+            document.getElementById("certificate-seta").style.transform = "scaleY(-1)"
+            
+            //esconde todos as informações dos certificados (o 0% de opacidade para a animação de mostrar o texto devagar depois)
+            document.querySelectorAll('.certificate-info').forEach((certificateInfo) => {
+                certificateInfo.style.opacity = '0%';
+                certificateInfo.style.display = 'none';
+                certificateInfo.style.display = 'flex';
+            });
+
+            //espera a animação do texto acontecer para mostrar as informações dos certificados
+            setTimeout(function() {
+                document.querySelectorAll('.certificate').forEach((certificate) => {
+                    
+                    //recomeça a contagem se já tiver 4 certificados na linha
+                    if (certificateCount >= 100){
+                        certificateCount = 0;
+                    }
+                    
+                    certificate.style.flexDirection = 'column'; 
+                    certificate.style.columnGap = 'unset'; 
+                    certificate.style.rowGap = '1vw';
+                    certificate.style.alignItems = 'unset';
+                    
+                    certificate.style.left = certificateCount + '%';   //posição temporária ainda com position absolut para efeito da animação
+                    certificateCount += 25;
+
+                    //espera a animação dos certificados acontecer para mostrar as informações dos certificados
+                    setTimeout(function() {
+                        certificate.style.position = 'unset'; //posição definitiva dos certifiados, não são mais position absolut
+                        document.querySelectorAll('.certificate-info').forEach((certificateInfo) => {
+                            certificateInfo.style.opacity = '100%'; 
+                            certificateCLickDisabled = false;
+                        });
+                    }, 1000);
+                });
+            }, 500);
+            return;
+        }   
+        //troca a classe certificados-container para close
+        (document.getElementById("certificate-container").classList.remove("certificate-open"));
+        (document.getElementById("certificate-container").classList.add("certificate-close"));
+
+        document.getElementById("certificate-seta").style.transform = "scaleY(1)"
+
         document.querySelectorAll('.certificate-info').forEach((certificateInfo) => {
             certificateInfo.style.opacity = '0%';
             certificateInfo.style.display = 'none';
             certificateInfo.style.display = 'flex';
         });
 
-        //espera a animação do texto acontecer para mostrar as informações dos certificados
+        //espera a animação do texto acontecer para voltar os certificados para a posição inicial
         setTimeout(function() {
             document.querySelectorAll('.certificate').forEach((certificate) => {
-                
-                //recomeça a contagem se já tiver 4 certificados na linha
-                if (certificateCount >= 100){
-                    certificateCount = 0;
-                }
-                
-                certificate.style.flexDirection = 'column'; 
-                certificate.style.columnGap = 'unset'; 
-                certificate.style.rowGap = '1vw';
-                certificate.style.alignItems = 'unset';
-                
-                certificate.style.left = certificateCount + '%';   //posição temporária ainda com position absolut para efeito da animação
-                certificateCount += 25;
 
-                //espera a animação dos certificados acontecer para mostrar as informações dos certificados
+                certificate.style.flexDirection = 'row'; 
+                certificate.style.columnGap = '1vw'; 
+                certificate.style.rowGap = 'unset';
+                certificate.style.alignItems = 'center';
+                certificate.style.position = 'absolute';
+
+                certificate.style.left = certificateCount + 'px';
+                certificateCount += 40;
+                
+                //espera a animação dos certificados acontecer para mostrar as informações do último certificado
                 setTimeout(function() {
-                    certificate.style.position = 'unset'; //posição definitiva dos certifiados, não são mais position absolut
-                    document.querySelectorAll('.certificate-info').forEach((certificateInfo) => {
-                        certificateInfo.style.opacity = '100%'; 
-                    });
+                    document.getElementById("last-certificate-info").style.opacity = '100%';
+                    certificateCLickDisabled = false;
                 }, 1000);
             });
         }, 500);
-        return;
-    }   
-    //troca a classe certificados-container para close
-    (document.getElementById("certificate-container").classList.remove("certificate-open"));
-    (document.getElementById("certificate-container").classList.add("certificate-close"));
-
-    document.getElementById("certificate-seta").style.transform = "scaleY(1)"
-
-    document.querySelectorAll('.certificate-info').forEach((certificateInfo) => {
-        certificateInfo.style.opacity = '0%';
-        certificateInfo.style.display = 'none';
-        certificateInfo.style.display = 'flex';
-    });
-
-    //espera a animação do texto acontecer para voltar os certificados para a posição inicial
-    setTimeout(function() {
-        document.querySelectorAll('.certificate').forEach((certificate) => {
-
-            certificate.style.flexDirection = 'row'; 
-            certificate.style.columnGap = '1vw'; 
-            certificate.style.rowGap = 'unset';
-            certificate.style.alignItems = 'center';
-            certificate.style.position = 'absolute';
-
-            certificate.style.left = certificateCount + 'px';
-            certificateCount += 40;
-            
-            //espera a animação dos certificados acontecer para mostrar as informações do último certificado
-            setTimeout(function() {
-                document.getElementById("last-certificate-info").style.opacity = '100%';
-            }, 1000);
-        });
-    }, 500);
+    }
 }
 
 const dataProjects = [
