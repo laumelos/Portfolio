@@ -62,6 +62,13 @@ function navAdjustments(){
         if(document.querySelector('nav').style.justifyContent !== 'center'){
             document.querySelector('nav').style.justifyContent = 'center';
         }
+    }else{
+        if(document.getElementById('nav').style.display !== 'flex'){
+            document.getElementById('nav').style.display = 'flex';
+        }
+        if(document.querySelector('nav').style.justifyContent !== 'space-between'){
+            document.querySelector('nav').style.justifyContent = 'space-between';
+        }
     }
 }
 
