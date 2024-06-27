@@ -130,11 +130,10 @@ function addCertificates() {
     });
 }
 
-var certificateCLickDisabled = false;
-
 //Cria a animação dos certificados para desktop
 function certificatesAnimation() {
-
+    
+    var certificateCLickDisabled = false;
     var certificateCount = 0;
 
     if (!certificateCLickDisabled){
