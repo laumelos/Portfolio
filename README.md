@@ -12,6 +12,11 @@ Aqui está um mapa básico da estrutura de pastas do projeto:
 
 ```
 portfolio/
+├── index.html          # Página com o header e footer (chama um dos arquivos de pages/)
+├── pages/
+│ ├── home.html         # Página inicial
+│ ├── project.html      # Página do projeto individual
+│ ├── allProjects.html  # Página de todos os projetos
 ├── css/
 │ ├── globals.css       # Estilos globais
 │ ├── style.css         # Estilos principais
@@ -19,16 +24,12 @@ portfolio/
 │ ├── animation.css     # Estilos dos efeitos de animações
 ├── scripts/
 │ ├── index.js          # Scripts
-├── images/
-│ ├── certificates/     # Imagens dos certificados
-│ ├── projects/         # Imagem dos projetos
-│ ├── technologies/     # Imagem das tecnologias
-│ └── ...               # Outras imagens
-├── pages/
-│ ├── home.html         # Página inicial
-│ ├── project.html      # Página do projeto individual
-│ └── allProjects.html  # Página de todos os projetos
-└── index.html          # Página com o header e footer (chama um dos arquivos de pages/)
+└── images/
+  ├── certificates/     # Imagens dos certificados
+  ├── projects/         # Imagem dos projetos
+  ├── technologies/     # Imagem das tecnologias
+  └── ...               # Outras imagens
+
 ```
 
 
