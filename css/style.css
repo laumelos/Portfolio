@@ -432,6 +432,7 @@ header{
 #project-info-video{
     width: 100%; 
     height: auto; 
+    max-height: 500px;
     object-fit: cover;
     object-position: top;
     border-radius: 5px;
