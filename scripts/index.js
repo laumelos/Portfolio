@@ -372,6 +372,8 @@ const dataExperiences = [
     { title: 'ATI - Agência de Tecnologia da Informação do Governo do MA', date: '2023.2 - atual', description: 'Desenvolvimento Front-End e design UI/UX de páginas de projetos do Governo do Estado do MA'}
 ];
 
+dataExperiences.reverse();
+
 // Função para criar e adicionar experiências à página
 function addExperiences() {
     const container = document.getElementById('experiences-container');
