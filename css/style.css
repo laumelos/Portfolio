@@ -439,6 +439,11 @@ header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+#project-info-video{
+    max-height: unset;
+
+}
+
 .category{
     border-bottom: 3px solid #00000008; /*f3ede7*/
     padding: 0.5vw 1vw;
