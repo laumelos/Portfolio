@@ -231,6 +231,8 @@ const dataProjects = [
     { id:'9', image: 'images/projects/hoopgems.png', title: 'HoopGems', link: 'https://www.behance.net/gallery/207006789/HoopGems', description: 'Identidade visual de loja de vestuário focada em tênis estilosos e blusas de basquete, com estética esportiva e urbana', category: 'design', technologies: 'figma,ai'},
     { id:'10', image: 'images/projects/euBicho.png', title: 'EuBicho', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7225232641380278273/', description: 'Quiz de personalidade onde cada opção escolhida soma pontos para diferentes animais com características relacionadas à escolha, e ao final o com mais pontos é o resultado', category: 'dev', github: 'https://github.com/laumelos/EuBicho', technologies: 'html,css,js,react,tailwind,ux'},
     { id:'11', image: 'images/projects/naturallis.png', video: 'images/projects/naturallis.mp4', title: 'Naturallis', link: 'https://www.behance.net/gallery/209792953/Site-Naturallis', description: 'Design de site de produtos de beleza naturais', category: 'design', technologies: 'figma, ux, ui'},
+    { id:'12', image: 'images/projects/nivox.png', video: '', title: 'Nivox', link: 'https://www.behance.net/gallery/221638643/Nivox?', description: 'Identidade visual empresa de multiatendimento com CRM para WhatsApp', category: 'design', technologies: 'figma, ux, ui'},
+
 ];
 
 dataProjects.reverse();
