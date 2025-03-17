@@ -232,7 +232,7 @@ const dataProjects = [
     { id:'10', image: 'images/projects/euBicho.png', title: 'EuBicho', link: 'https://www.linkedin.com/feed/update/urn:li:activity:7225232641380278273/', description: 'Quiz de personalidade onde cada opção escolhida soma pontos para diferentes animais com características relacionadas à escolha, e ao final o com mais pontos é o resultado', category: 'dev', github: 'https://github.com/laumelos/EuBicho', technologies: 'html,css,js,react,tailwind,ux'},
     { id:'11', image: 'images/projects/naturallis.png', video: 'images/projects/naturallis.mp4', title: 'Naturallis', link: 'https://www.behance.net/gallery/209792953/Site-Naturallis', description: 'Design de site de produtos de beleza naturais', category: 'design', technologies: 'figma, ux, ui'},
     { id:'12', image: 'images/projects/nivox.png', video: '', title: 'Nivox', link: 'https://www.behance.net/gallery/221638643/Nivox?', description: 'Identidade visual empresa de multiatendimento com CRM para WhatsApp', category: 'design', technologies: 'figma, ux, ui'},
-
+    { id:'13', image: 'images/projects/telaMaranhao.png', video: '', title: 'Tela Maranhão', link: 'https://www.behance.net/gallery/221639035/Tela-Maranhao?', description: 'Identidade visual cinema regional e inovador', category: 'design', technologies: 'figma, ux, ui'},
 ];
 
 dataProjects.reverse();
@@ -432,7 +432,7 @@ const dataKnowledge = [
     { id:'4', completed:'y', title:'Figma', image:'images/technologies/figma-icon.svg', text: 'Figma é uma ferramenta de design de interface e prototipagem baseada na nuvem, amplamente utilizada para criar designs de UI e UX.'},
     { id:'5', completed:'y', title:'Illustrator', image:'images/technologies/ai-icon.svg', text: 'Adobe Illustrator é um software de design gráfico vetorizado, usado principalmente para a criação de gráficos, logos e ilustrações.'},
     { id:'6', completed:'y', title:'Tailwind', image:'images/technologies/tailwind-icon.svg', text: 'Tailwind CSS é um framework de design utilitário que permite estilizar elementos HTML usando classes pré-definidas.'},
-    { id:'7', completed:'n', title:'React Js', image:'images/technologies/react-icon.svg', text: '*Aprendendo...* <br> React é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e eficientes com componentes reutilizáveis que gerenciam seu próprio estado.'},
+    { id:'7', completed:'n', title:'React Js', image:'images/technologies/react-icon.svg', text: 'React é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e eficientes com componentes reutilizáveis que gerenciam seu próprio estado.'},
     { id:'8', completed:'n', title:'PHP', image:'images/technologies/php-icon.svg', text: '*Aprendendo...* <br> PHP é uma linguagem de script usada para criar páginas web dinâmicas, interagir com bancos de dados e processar formulários, embutida no HTML para gerar conteúdo personalizado.'},
     { id:'9', completed:'n', title:'SQL', image:'images/technologies/sql-icon.svg', text: '*Aprendendo...* <br> SQL é uma linguagem de programação usada para gerenciar e manipular bancos de dados, permitindo consultas, inserções e atualizações de dados.'}
 ];
