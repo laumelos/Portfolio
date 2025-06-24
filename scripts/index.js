@@ -233,6 +233,7 @@ const dataProjects = [
     { id:'11', image: 'images/projects/naturallis.png', video: 'images/projects/naturallis.mp4', title: 'Naturallis', link: 'https://www.behance.net/gallery/209792953/Site-Naturallis', description: 'Design de site de produtos de beleza naturais', category: 'design', technologies: 'figma, ux, ui'},
     { id:'12', image: 'images/projects/nivox.png', video: '', title: 'Nivox', link: 'https://www.behance.net/gallery/221638643/Nivox?', description: 'Identidade visual empresa de multiatendimento com CRM para WhatsApp', category: 'design', technologies: 'figma, ux, ui'},
     { id:'13', image: 'images/projects/telaMaranhao.png', video: '', title: 'Tela Maranhão', link: 'https://www.behance.net/gallery/221639035/Tela-Maranhao?', description: 'Identidade visual cinema regional e inovador', category: 'design', technologies: 'figma, ux, ui'},
+    { id:'14', image: 'images/projects/incode.png', video: 'images/projects/incode.mp4', title: 'Landing page Incode', link: 'https://www.behance.net/gallery/228871837/Landing-page-Incode', description: 'Design de site de curso de programação', category: 'design', technologies: 'figma, ux, ui'},
 ];
 
 dataProjects.reverse();
