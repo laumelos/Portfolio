@@ -1,46 +1,9 @@
-@media (max-width: 1036px) and (orientation: portrait){
-/*GERAL ----------------------------------- */
-
+/*ipad------------------------------------------*/
+@media (min-width: 768px) and (max-width: 1000px) {
 :root {
-    --screen-size: 90%;
+    --screen-size: 80%;
 }
-
-/*FONTS ----------------------------------- */
-small{
-    font-size: 3.2vw;
-    max-width: 60%;
-}
-
-p,
-button{
-    font-size: 3.8vw;
-}
-
-strong{
-    font-size: 3.9vw;
-}
-
-h1{
-    font-size: 4.2vw;
-    font-weight: 500;
-}
-
-h2{
-    font-size: 4.2vw;
-    font-weight: 500;
-}
-
-h3{
-    font-size: 3.8vw;
-    font-weight: 500;
-}
-
-a,
-h4{
-    font-size: 3.6vw;    
-}
-
-/*GLOBALS*/
+    /*GLOBALS*/
 .content-row{
     display: flex;
     flex-direction: column;
@@ -49,21 +12,27 @@ h4{
 }
 
 .container-grid{
-    gap: 4vw;
+    gap: 1rem;
 }
 
 .gap-small{
-    gap: 2vw !important;
+    gap: 0.5rem !important;
 }
 
+.gap-large,
 .gap-medium{
-    gap: 4vw !important;
+    gap: 2rem !important;
 }
 
 /*ICONS*/
 .icon-default{
-    width: 8vw;
-    max-height: 8vw;
+    width: 3rem;
+    max-height: 3rem;
+}
+
+footer .icon-default{
+    width: 2rem;
+    max-height: 2rem;
 }
 
 .icon-small{
@@ -80,7 +49,7 @@ h4{
 
 /*HEADER*/
 #nav{
-    display: none;
+    display: none !important;
 }
 
 nav a h2{
@@ -90,7 +59,7 @@ nav a h2{
 /*ABOUT ME*/
 #about-me,
 #project-info-container{
-    margin-top: 8vw;
+    margin-top: 4rem;
 }
 
 #about-me div{
@@ -117,7 +86,7 @@ nav a h2{
 #icon-profile{
     width: 20vw;
     height: 20vw;
-    right: 20vw;
+    right: 10vw;
 }
 
 
@@ -125,7 +94,7 @@ nav a h2{
 #certificate-container{
     display: flex;
     flex-direction: column;
-    row-gap: 4vw;
+    row-gap: 1.5rem;
 }
 
 #certificate-seta{
@@ -135,7 +104,7 @@ nav a h2{
 .certificate{
     position: relative;
     margin-right: 30px;
-    column-gap: 3vw;
+    column-gap: 1.5rem;
 }
 
 .certificate-img{
@@ -170,14 +139,271 @@ nav a h2{
 }
 
 .experience-detail{
-    width: 1vw;
-    left: 3.5vw;
+    width: 0.25rem;
+    left: 1.3rem;
 }
 
 .experience-detail-small{
+    height: 100%;
+    width: 0.25rem;
+    left: 1.3rem;
+}
+
+.experience-info{
+    flex-direction: column;
+    gap: 1vw;
+    align-items: flex-start;
+}
+
+.experience-info div,
+.experience-description{
+    width: unset;
+}
+
+/*PROJECTS*/
+#projects-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+.project-img{
+    height: 10rem;
+    min-height: 10rem;
+}
+
+.project-info{
+    padding: 1rem;
+}
+
+.project-category,
+.button-filter{
+    padding: 0.25rem 1rem;
+}
+
+.category{
+    padding: 0.25rem 1rem;
+}
+
+.project-all-page .project-img {
+    height: 24vw;
+    object-position: left;
+}
+
+/*FOOTER*/
+#footer-detail{
+    right: -10vw;
+}
+
+#contacts img{
+    width: 2.5rem;
+    width: 2.5rem;
+}
+
+#gradient-bg{
+    height: 100%;
+    max-height: 100%;
+}
+}
+
+/*mobile------------------------------------------*/
+@media (max-width: 767px) and (orientation: portrait){
+/*GERAL ----------------------------------- */
+
+:root {
+    --screen-size: 90%;
+}
+
+/*FONTS ----------------------------------- */
+small{
+    font-size: 3.2vw;
+    /*max-width: 60%;*/
+}
+footer small{
+    max-width: 60%;
+}
+
+p,
+button{
+    font-size: 1.1rem;
+}
+
+strong{
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+a,
+h4{
+    font-size: 1rem;    
+}
+
+/*GLOBALS*/
+.content-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--screen-size);
+}
+
+.container-grid{
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.gap-small{
+    gap: 0.5rem !important;
+}
+
+.gap-large,
+.gap-medium{
+    gap: 2rem !important;
+}
+
+/*ICONS*/
+.icon-default{
+    width: 3rem;
+    max-height: 3rem;
+}
+
+footer .icon-default{
+    width: 2rem;
+    max-height: 2rem;
+}
+
+.icon-small{
+    width: 4vw;
+    max-height: 4vw;
+}
+
+/*buttons*/
+.button-default{
+    padding: 2vw 4vw;
+}
+
+/*ESPECIFICS*/
+
+section,
+footer{
+    padding: 2rem 0px;
+}
+
+/*HEADER*/
+#nav{
+    display: none !important;
+}
+
+nav a h2{
+    text-align: center;
+}
+
+/*ABOUT ME*/
+#about-me,
+#project-info-container{
+    margin-top: 4rem;
+}
+
+#about-me div{
+    flex-direction: column-reverse;
+}
+
+
+#sobre-text{
+    width: 100%;
+}
+
+#profile-picture-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+#profile-picture{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+}
+
+#icon-profile{
+    width: 30vw;
     height: 30vw;
-    width: 1vw; 
-    left: 3.5vw;
+    right: 15vw;
+}
+
+
+/*CERTIFICATES*/
+#certificate-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+#certificate-seta{
+    display: none;
+}
+
+.certificate{
+    position: relative;
+    margin-right: 30px;
+    column-gap: 1.5rem;
+}
+
+.certificate-img{
+    width: 30vw;
+    min-width: 30vw;
+    height: 20vw;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+/*KNOWLEDGE*/
+.item-knowledge{
+    width: 100%;
+    height: unset;
+    padding: 5vw;
+}
+
+.item-knowledge-project-page{
+    width: 13.3vw;
+    height: 13.3vw;
+    padding: 3vw;
+}
+
+.item-knowledge img{
+    width: 100%;
+    height: auto;
+    max-height: unset;
+}
+
+/*EXPERIENCE*/
+.experience{
+    width: var(--screen-size) !important;
+}
+
+.experience-detail{
+    width: 0.25rem;
+    left: 1.3rem;
+}
+
+.experience-detail-small{
+    height: 100%;
+    width: 0.25rem;
+    left: 1.3rem;
 }
 
 .experience-info{
@@ -198,20 +424,20 @@ nav a h2{
 }
 
 .project-img{
-    height: 30vw;
+    height: 12rem;
 }
 
 .project-info{
-    padding: 3vw;
+    padding: 1rem;
 }
 
 .project-category,
 .button-filter{
-    padding: 0.5vw 1.5vw;
+    padding: 0.25rem 1rem;
 }
 
 .category{
-    padding: 1vw 2vw;
+    padding: 0.25rem 1rem;
 }
 
 .project-all-page .project-img {
@@ -225,11 +451,16 @@ nav a h2{
 }
 
 #contacts img{
-    width: 6vw;
-    width: 6vw;
+    width: 2.5rem;
+    width: 2.5rem;
 }
 
 /*animation*/
+
+#gradient-bg{
+    height: 100%;
+}
+
 #gradient-bg-small {
     top: -10vw;
     right: 0vw;
@@ -246,13 +477,13 @@ nav a h2{
 }
 }
 
-@media (max-width: 1036px){
+@media (max-width: 1000px){
 #main-content{
-    padding-bottom: 58vw;
+    padding-bottom: 21rem;
 }
 
 footer{
-    height: 58vw;
+    height: 21rem;
 }
 
 }

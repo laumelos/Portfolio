@@ -4,15 +4,15 @@
 }
 
 .gap-small{
-    gap: 1vw;
+    gap: 1rem;
 }
 
 .gap-medium{
-    gap: 2vw;
+    gap: 2rem;
 }
 
 .gap-large{
-    gap: 4vw;
+    gap: 3rem;
 }
 
 section{
@@ -21,18 +21,18 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4vw 0px;
+    padding: 4rem 0px;
     position: relative;
     overflow: hidden;
 }
 
 footer{
     width: 100%;
-    height: 24vw;
+    height: 21rem;
     position: absolute !important;
     bottom: 0;
     right: 0;
-    padding: 4vw 0px;
+    padding: 2rem 0px;
     overflow: hidden;
     align-items: center;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ footer{
 .section-small{
     display: flex;
     width: var(--screen-size);
-    padding: 4vw;
+    padding: 2rem;
     border-radius: 20px;
     background-color: var(--light-beige); 
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.062);
@@ -88,9 +88,14 @@ footer{
 /*ICONS*/
 
 .icon-default{
-    width: 2vw;
-    max-height: 2vw;
+    width: 2.5rem;
+    max-height: 2.5rem;
     transition: 0.5s;
+}
+
+footer .icon-default{
+    width: 1.75rem;
+    max-height: 1.75rem;
 }
 
 .icon-small{

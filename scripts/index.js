@@ -75,14 +75,14 @@ function navAdjustments(){
 }
 
 //Direciona à sessão da página que foi clicada na nav bar
-function navScroll(targetSection){
+/*function navScroll(targetSection){
     const targetSectionId = document.getElementById(targetSection);
         
     targetSectionId.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     });
-}
+}*/
 
 
 const dataCertificates = [
@@ -234,7 +234,9 @@ const dataProjects = [
     { id:'12', image: 'images/projects/nivox.png', video: '', title: 'Nivox', link: 'https://www.behance.net/gallery/221638643/Nivox?', description: 'Identidade visual empresa de multiatendimento com CRM para WhatsApp', category: 'design', technologies: 'figma, ux, ui'},
     { id:'13', image: 'images/projects/telaMaranhao.png', video: '', title: 'Tela Maranhão', link: 'https://www.behance.net/gallery/221639035/Tela-Maranhao?', description: 'Identidade visual cinema regional e inovador', category: 'design', technologies: 'figma, ux, ui'},
     { id:'14', image: 'images/projects/incode.png', video: 'images/projects/incode.mp4', title: 'Landing page Incode', link: 'https://www.behance.net/gallery/228871837/Landing-page-Incode', description: 'Design de site de curso de programação', category: 'design', technologies: 'figma, ux, ui'},
-    { id:'15', image: 'images/projects/op.png', video: 'images/projects/op.mp4', title: 'Landing page Orçamento Participativo', link: 'https://www.behance.net/gallery/228884445/Site-Orcamento-Participativo', description: 'Design de site programa do Governo do Maranhão', category: 'dev', technologies: 'figma, html ,css,js, php, sql'},
+    { id:'15', image: 'images/projects/op.png', video: 'images/projects/op.mp4', title: 'Landing page Orçamento Participativo', link: 'https://op.participa.ma.gov.br/', description: 'Design de site programa do Governo do Maranhão - Orçamento Participativo 2025', category: 'dev', technologies: 'figma, html ,css,js, php, sql'},
+    { id:'16', image: 'images/projects/encat.png', video: 'images/projects/encat.mp4', title: 'Landing page 79º ENCAT', link: 'https://encat.ma.gov.br/', description: 'Design e desenvolvimento do site do 79º Encontro Nacional de Coordenadores e Administradores Tributários Estaduais (ENCAT)', category: 'design, dev', technologies: 'figma, html ,css,js, ui, ux'},
+
 ];
 
 dataProjects.reverse();
@@ -262,7 +264,16 @@ function addProjects() {
         const description = clone.querySelector('.project-description');
         description.textContent = project.description;
 
-        clone.querySelector('.project').classList.add(project.category);
+        //  Adiciona todas as categorias como classe
+
+        const rawCategories = project.category.split(",");
+        const categories = [];
+
+        rawCategories.forEach((cat) => {
+            cat = cat.trim().toLowerCase();
+            categories.push(cat);
+            itemProject.classList.add(cat);
+        });
 
         //Mostra o botão de ver mais se tiver mais de cinco projetos
         if(index > 5 && (currentPage === 'home.html')){
@@ -272,11 +283,18 @@ function addProjects() {
             }
         }
 
-        //Adiciona a tag de categoria apenas na página allProjects
-        if(currentPage === 'allProjects.html'){
-            const category = clone.querySelector('.project-category');
-            category.textContent = project.category;
+         //Adiciona a tag de categoria apenas na página allProjects
+        if (currentPage === 'allProjects.html') {
+            const metaContainer = clone.querySelector('.project-meta');
+            categories.forEach(cat => {
+                const tag = document.createElement('small');
+                tag.classList.add('project-category');
+                tag.style.color = "var(--light-beige)";
+                tag.textContent = cat;
+                metaContainer.appendChild(tag);
+            });
         }
+    
         container.appendChild(clone);
     });
 }
@@ -431,12 +449,13 @@ const dataKnowledge = [
     { id:'1', completed:'y', title:'CSS', image:'images/technologies/css-icon.svg', text: 'CSS é uma linguagem de folha de estilos utilizada para estilizar a aparência dos elementos HTML, como cores, fontes e layout.'},
     { id:'2', completed:'y', title:'JS', image:'images/technologies/js-icon.svg', text: 'JavaScript é uma linguagem de programação que permite adicionar interatividade, lógica e funcionalidades dinâmicas aos websites.'},
     { id:'3', completed:'y', title:'UI', image:'images/technologies/ui-icon.svg', text: 'UI (User Interface) refere-se à interface visual e interativa através da qual os usuários interagem com o produto, incluindo elementos como layout, design e usabilidade.'},
-    { id:'4', completed:'y', title:'Figma', image:'images/technologies/figma-icon.svg', text: 'Figma é uma ferramenta de design de interface e prototipagem baseada na nuvem, amplamente utilizada para criar designs de UI e UX.'},
-    { id:'5', completed:'y', title:'Illustrator', image:'images/technologies/ai-icon.svg', text: 'Adobe Illustrator é um software de design gráfico vetorizado, usado principalmente para a criação de gráficos, logos e ilustrações.'},
-    { id:'6', completed:'y', title:'Tailwind', image:'images/technologies/tailwind-icon.svg', text: 'Tailwind CSS é um framework de design utilitário que permite estilizar elementos HTML usando classes pré-definidas.'},
-    { id:'7', completed:'n', title:'React Js', image:'images/technologies/react-icon.svg', text: 'React é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e eficientes com componentes reutilizáveis que gerenciam seu próprio estado.'},
-    { id:'8', completed:'n', title:'PHP', image:'images/technologies/php-icon.svg', text: '*Aprendendo...* <br> PHP é uma linguagem de script usada para criar páginas web dinâmicas, interagir com bancos de dados e processar formulários, embutida no HTML para gerar conteúdo personalizado.'},
-    { id:'9', completed:'n', title:'SQL', image:'images/technologies/sql-icon.svg', text: '*Aprendendo...* <br> SQL é uma linguagem de programação usada para gerenciar e manipular bancos de dados, permitindo consultas, inserções e atualizações de dados.'}
+    { id:'4', completed:'y', title:'UX', image:'images/technologies/ux-icon.svg', text: 'UX (User Experience) diz respeito à experiência geral do usuário ao interagir com um produto ou serviço, englobando aspectos como acessibilidade, eficiência, satisfação e facilidade de uso.'},
+    { id:'5', completed:'y', title:'Figma', image:'images/technologies/figma-icon.svg', text: 'Figma é uma ferramenta de design de interface e prototipagem baseada na nuvem, amplamente utilizada para criar designs de UI e UX.'},
+    { id:'6', completed:'y', title:'Illustrator', image:'images/technologies/ai-icon.svg', text: 'Adobe Illustrator é um software de design gráfico vetorizado, usado principalmente para a criação de gráficos, logos e ilustrações.'},
+    { id:'7', completed:'y', title:'Tailwind', image:'images/technologies/tailwind-icon.svg', text: 'Tailwind CSS é um framework de design utilitário que permite estilizar elementos HTML usando classes pré-definidas.'},
+    { id:'8', completed:'n', title:'React Js', image:'images/technologies/react-icon.svg', text: 'React é uma biblioteca JavaScript usada para construir interfaces de usuário interativas e eficientes com componentes reutilizáveis que gerenciam seu próprio estado.'},
+    { id:'9', completed:'n', title:'PHP', image:'images/technologies/php-icon.svg', text: '*Aprendendo...* <br> PHP é uma linguagem de script usada para criar páginas web dinâmicas, interagir com bancos de dados e processar formulários, embutida no HTML para gerar conteúdo personalizado.'},
+    { id:'10', completed:'n', title:'SQL', image:'images/technologies/sql-icon.svg', text: '*Aprendendo...* <br> SQL é uma linguagem de programação usada para gerenciar e manipular bancos de dados, permitindo consultas, inserções e atualizações de dados.'}
 ];
 
 let currentTimeout;
